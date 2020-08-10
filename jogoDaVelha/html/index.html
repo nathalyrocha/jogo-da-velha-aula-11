@@ -1,0 +1,93 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<title>Jogo da velha</title>
+		<link rel="stylesheet" href="../css/style.css">
+
+		<script src="../js/jquery-2.2.1.js"></script>
+		<script src="../js/jogo.js"></script>
+	</head>
+
+	<body>
+		<div id="pagina-inicial" align="center">
+			<table width="600px">
+				<tr>
+					<td id="title" colspan="3" align="center">JOGO DA VELHA</td>
+				</tr>
+				
+				<tr>
+					<td align="center">
+						<img src="../imagens/jogador_1.png" />
+						<br />
+						<input id="apelido-jogador-1" type="text" maxlength="10" placeholder="Apelido Jogador 1" />
+					</td>
+
+					<td align="center">
+						<img id="btn-iniciar-jogo" src="../imagens/iniciar.png" />
+					</td>
+
+					<td align="center">
+						<img src="../imagens/jogador_2.png" />
+						<br />
+						<input id="apelido-jogador-2" type="text" maxlength="10" placeholder="Apelido Jogador 2" />
+					</td>
+				</tr>
+			</table>
+		</div>
+
+		<div id="palco-do-jogo">
+			<div class="divs-jogo">
+				<img src="../imagens/jogador_1.png" />
+				<br />
+				<span id="nome-jogador-1"></span>
+			</div>
+
+			<div class="divs-jogo">
+				<table>
+					<tr>
+						<td class="td1">
+							<div class="jogada" id="a-1"></div>
+						</td>
+						<td class="td1">
+							<div class="jogada" id="a-2"></div>
+						</td>
+						<td class="td2">
+							<div class="jogada" id="a-3"></div>
+						</td>
+					</tr>
+
+					<tr>
+						<td class="td1">
+							<div class="jogada" id="b-1"></div>
+						</td>
+						<td class="td1">
+							<div class="jogada" id="b-2"></div>
+						</td>
+						<td class="td2">
+							<div class="jogada" id="b-3"></div>
+						</td>
+					</tr>
+
+					<tr>
+						<td class="td3">
+							<div class="jogada" id="c-1"></div>
+						</td>
+						<td class="td3">
+							<div class="jogada" id="c-2"></div>
+						</td>
+						<td>
+							<div class="jogada" id="c-3"></div>
+						</td>
+					</tr>
+				</table>
+			</div>
+
+			<div class="divs-jogo">
+				<img src="../imagens/jogador_2.png" />
+				<br />
+				<span id="nome-jogador-2"></span>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,67 @@
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  background-image: url("../imagens/papyrus.png");
+  object-fit: cover;
+}
+
+#title {
+  font-size: 25px;
+}
+
+#apelido-jogador-1, #apelido-jogador-2 {
+  font-size: 15px;
+  border-top: 0;
+  border-right: 0;
+  border-bottom: 2px solid black;
+  border-left: 0;
+  text-align: center;
+  padding: 10px;
+  background-color: transparent;
+}
+
+#apelido-jogador-1:hover {
+  transition: 0.5s;
+  border-bottom: 2px solid red;
+}
+
+#apelido-jogador-2:hover {
+  transition: 0.5s;
+  border-bottom: 2px solid rgb(53, 112, 240);
+}
+
+#btn-iniciar-jogo:hover {
+  transition: 0.5s;
+  opacity: 70%;
+}
+
+#palco-do-jogo {
+  display: none;
+  text-align: center;
+}
+
+.td1 {
+  border-bottom: solid 1.5px red; 
+  border-right: 1.5px solid red;
+}
+
+.td2 {
+  border-bottom: solid 1.5px red;
+}
+
+.td3 {
+  border-right: solid 1.5px red;
+}
+
+.jogada {
+  width: 100px; 
+  height: 100px;
+}
+
+.divs-jogo {
+  display: inline-block;
+}
